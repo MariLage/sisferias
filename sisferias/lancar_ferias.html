@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> teste </title>
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="cabecalho">
+                <div class="titulo">
+                    <!-- título + icone -->
+                    <p id="topTitulo">
+                        <i class="material-icons" id="ancora">anchor</i>
+                        SISFÉRIAS
+                        <br>
+                        Marinha do Brasil
+
+                    </p>
+                </div>
+                <!-- barra de navegação -->
+                <nav class="navbar">
+                    <a class="inicio" href="/home.html"> <i class="material-icons" id="iconHome">home</i> Início </a>
+                    <a class="lancamento" href="/lancar_ferias.html"> <i class="material-icons"
+                            id="circle">add_circle</i>Lançar Férias
+                    </a>
+                    <a class="impressao" href="#"> <i class="material-icons" id="docs">article</i>Impressão </a>
+                    <a class="seguranca" href="#"> <i class="material-icons" id="security">gpp_maybe</i> Segurança </a>
+                </nav>
+                <div class="userLogin ">
+
+                </div>
+            </div>
+        </header>
+        <div class="conteudo">
+            <div class="tabelas-container">
+                <div class="conteudo2">
+                    <div class="cabecalhoFerias">
+                        <div class="quadro2">
+                            <i class="material-icons" id="calendario">calendar_month</i>
+                            <span id="tituloQuadro"> Lança Férias </span>
+                            <p> Janela de Planejamento:</p>
+                        </div>
+                        <div class="ferias">
+                            <p class="textoLancarFerias"> DIREITO </p>
+                            <p class="valorLancarFerias"> N </p>
+                        </div>
+                        <div>
+                            <p class="textoLancarFerias"> PROGRAMADOS </p>
+                            <p class="valorLancarFerias"> N </p>
+                        </div>
+                        <div>
+                            <p class="textoLancarFerias"> PARCELAS</p>
+                            <p class="valorLancarFerias"> N </p>
+
+                        </div>
+                    </div>
+                    <section id="a1">
+                        <div class="tabelaForms1">
+                            <div class="cabecalhoForms1">
+                                <h4> Dados do Militar</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="imagem">
+                            <div class="campo-foto">
+                                <label for="foto">Foto</label>
+
+                                <input type="file" id="foto" accept="image/*">
+
+                                <img id="preview" src="" alt="Pré-visualização da foto">
+
+                                <div class="feriasRefAno">
+                                    <label>Férias Referente ao Ano</label>
+                                    <select id="fériasRefAno" name="fériasRefAno">
+                                        <option value="2025"> 2025</option>
+                                        <option value="2026"> 2026</option>
+                                        <option value="2027"> 2027</option>
+                                        <option value="2028"> 2028</option>
+                                        <option value="2029"> 2029</option>
+                                        <option value="2030"> 2030</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="qtdDireito">
+                                <label>Quantidade de Dias de Direito</label>
+                                <input type="number" min="0" max="100">
+                            </div>
+
+                            <div class="nomePes">
+                                <label>Nome Completo</label>
+                                <input type="text" maxlength="100">
+                            </div>
+                            <div class="box1Lancar">
+                                <div class="nomeGuerra">
+                                    <label>Nome de Guerra</label>
+                                    <input type="text">
+                                </div>
+                                <div class="nip">
+                                    <label>Nip</label>
+                                    <input type="text">
+                                </div>
+                                <div class="setor">
+                                    <label>Setor</label>
+                                    <select id="setorSelect" name="setorSelect">
+                                        <option value="01"> 01</option>
+                                        <option value="02"> 02</option>
+                                        <option value="10"> 10</option>
+                                        <option value="13"> 13</option>
+                                        <option value="14"> 14</option>
+                                        <option value="20"> 20</option>
+                                        <option value="30"> 30</option>
+                                        <option value="40"> 40</option>
+                                        <option value="50"> 50</option>
+                                        <option value="60"> 60</option>
+                                        <option value="70"> 70</option>
+                                        <option value="outro"> outro </option>
+                                        <option value="secom"> Secom </option>
+                                        <option value="cadastro"> + Cadastrar novo setor </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box2Lancar">
+                                <div class="categoria">
+                                    <label>Categoria</label>
+                                    <select id="categoriaSelect" name="categoriaSelect">
+                                        <option value="praca"> Praça</option>
+                                        <option value="oficial">Oficial</option>
+                                        <option value="servidorCivil"> Servidor Civil</option>
+                                    </select>
+                                </div>
+                                <div class="posto">
+                                    <label>Posto/Graduação</label>
+                                    <select id="postoSelect" name="postoSelect">
+                                        <option value="rc"> RC</option>
+                                        <option value="mn">MN</option>
+                                        <option value="cb"> CB</option>
+                                        <option value="3sg"> 3 SG</option>
+                                        <option value="2sg">2 SG</option>
+                                        <option value="1sg"> 1 SG</option>
+                                        <option value="so"> SO</option>
+                                    </select>
+                                </div>
+                                <div class="esp">
+                                    <label>esp.</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                    </section>
+                    <section id="a2">
+                        <div class="tabelaForms2">
+                            <div class="cabecalhoForms2">
+                                <h4> Período de Férias (2026)</h4>
+                                <div class="saldoRest">
+                                    <p>Saldo Restante</p>
+                                    <p id="valorSaldoRest">30 dias</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <div class="feriasRefAno">
+                            <label>Dividir em quantas parcelas</label>
+                            <select id="fériasRefAno" name="fériasRefAno">
+                                <option value="1Parc"> 1 Parcela</option>
+                                <option value="2Parc"> 2 Parcela</option>
+                                <option value="3Parc"> 3 Parcela</option>
+                                <option value="4Parc"> 4 Parcela</option>
+                            </select>
+                        </div>
+                </div>
+                <div class="parcelas">
+                    <div class="dataParc">
+                        <p id="dataParct">0</p>
+                        <p> dias </p>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

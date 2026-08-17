@@ -1,0 +1,355 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    left: 0;
+    right: 0;
+    scrollbar-width: none;
+}
+
+body,
+html {
+    margin: 0;
+    max-width: auto;
+    max-height: auto;
+}
+
+/* sisferias + marinha do brasil*/
+.cabecalho {
+    display: flex;
+    padding: 0px 20px;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgb(212, 212, 212);
+    z-index: 20;
+    position: fixed;
+    top: 0;
+}
+
+
+a {
+    border-radius: 5px;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    line-height: 100px;
+    border-width: medium;
+}
+
+a:hover {
+    background-color: navy;
+    color: white;
+}
+
+
+#cabec2 {
+    color: navy;
+}
+
+.conteudo {
+    background-color: navy;
+    margin-top: 100px;
+    max-height: auto;
+    padding-top: 50px;
+}
+
+h5 {
+    letter-spacing: 4px;
+    color: rgb(190, 190, 190);
+}
+
+.intro {
+    display: block;
+    justify-content: center;
+}
+
+.dados,
+.avisos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.avisos,
+.conteudo2 {
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(146, 146, 146, 0.466);
+    box-shadow: 4px 4px 10px rgba(146, 146, 146, 0.466);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    height: 50%;
+}
+
+.efetivo,
+.ausentes,
+.grafico {
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px rgba(11, 11, 73, 0.432);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 400px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 12px;
+    gap: 15px;
+
+}
+
+
+.quadro {
+    color: white;
+    background-color: rgb(0, 0, 141);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 25px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+p {
+    overflow-wrap: break-word;
+    text-justify: inter-word;
+    font-size: 14px;
+}
+
+.cabecalhoBemVindo,
+.cabecalhoTurma {
+    border-color: navy;
+    padding: 20px 20px;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 20px 20px;
+
+}
+
+.data1,
+.data2 {
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo1 {
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+span,
+#dataicon1,
+#dataicon2 {
+    font-size: inherit;
+}
+
+.cabecalhoBemVindo:hover,
+.cabecalhoTurma:hover {
+    box-shadow: 5px 5px 5px darkgray;
+
+}
+
+#tituloQuadro {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tituloAviso {
+    font-size: 12px;
+    padding: 0px 50px;
+}
+
+.iconMega {
+    background-color: rgb(59, 59, 189);
+    width: 4%;
+    height: 40px;
+    padding-left: 10px;
+    align-content: center;
+    float: left;
+    border-radius: 7px;
+}
+
+h5,
+h1 {
+    text-align: center;
+    padding-left: 400px;
+}
+
+h1 {
+    color: white;
+}
+
+.cabecalho1,
+.cabecalho2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#topTitulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: medium;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#ancora {
+    background-color: rgb(69, 69, 146);
+    width: 35px;
+    height: 40px;
+    padding-left: 10px;
+    align-content: center;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 50px;
+    color: rgb(231, 231, 231);
+}
+
+.valorLancarFerias,
+.textoLancarFerias {
+    color: rgb(255, 255, 255);
+}
+
+.cabecalhoFerias {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(0, 0, 141);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+}
+
+/* gpt layout */
+
+.tabelaForms1,
+.tabelaForms2 {
+    padding: 20px 25px 0;
+}
+
+.cabecalhoForms1 h4,
+.cabecalhoForms2 h4 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.cabecalhoForms1 hr,
+.cabecalhoForms2 hr {
+    margin: 12px 0 0;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.imagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 22px;
+    padding: 25px;
+}
+
+
+.imagem>div {
+    min-width: 0;
+}
+
+.imagem label {
+    display: block;
+    margin-bottom: 6px;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#preview {
+    display: block;
+    width: 110px;
+    height: 130px;
+    margin-top: 10px;
+    object-fit: cover;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #f3f4f6;
+}
+
+.imagem input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    color: #4b5563;
+    background: #f9fafb;
+    border: 1px dashed #c7ccd5;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.imagem input[type="file"]:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+.nomeGuerra,
+.nip,
+.setor,
+.categoria,
+.posto,
+.esp,
+.feriasRefAno,
+.qtdDireito {
+    min-width: 0;
+}
+
+.box1Lancar,
+.box2Lancar {
+    display: grid;
+
+    grid-template-columns:
+        1.6fr 1fr 1.2fr;
+
+    gap: 18px;
+
+    grid-column: 1 / -1;
+}
+
+
+.nomePes {
+    grid-column: 1 / -1;
+}
+
+.nomePes input {
+    width: 100%;
+}
