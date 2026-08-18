@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> teste </title>
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="cabecalho">
+                <div class="titulo">
+                    <!-- título + icone -->
+                    <p id="topTitulo">
+                        <i class="material-icons" id="ancora">anchor</i>
+                        SISFÉRIAS
+                        <br>
+                        Marinha do Brasil
+
+                    </p>
+                </div>
+                <!-- barra de navegação -->
+                <nav class="navbar">
+                    <a class="inicio" href="/home.html"> <i class="material-icons" id="iconHome">home</i> Início </a>
+                    <a class="lancamento" href="/lancar_ferias.html"> <i class="material-icons"
+                            id="circle">add_circle</i>Lançar Férias
+                    </a>
+                    <a class="impressao" href="/impressao.html"> <i class="material-icons"
+                            id="docs">article</i>Impressão </a>
+                    <a class="seguranca" href="#"> <i class="material-icons" id="security">gpp_maybe</i> Segurança </a>
+                </nav>
+                <div class="userLogin ">
+
+                </div>
+            </div>
+        </header>
+
+        <div class="conteudo">
+            <div class="conteudo3">
+                <!-- cabecalho do corpo -->
+                <div class="cabecalhoImpressao">
+                    <div class="quadro3">
+                        <i class="material-icons" id="IconPrint">print</i>
+                        <span id="tituloQuadro"> Impressão de Documento</span>
+                        <p> A pág. 2 (anexo) só é gerada quando houver texto preenchido no anexo. </p>
+                    </div>
+                </div>
+
+                <div class="box1JanelaRef">
+                    <div class="refJanela1">
+                        <div>
+                            <h4>Janela de Referência </h4>
+                        </div>
+                        <div class="">
+                            <!-- muda conforme o lancar_ferias -->
+                            <label>Ano</label>
+                            <select id="anoRef" name="anoRef">
+                                <option value="2025"> 2025</option>
+                                <option value="2026"> 2026</option>
+                                <option value="2027"> 2027</option>
+                                <option value="2028"> 2028</option>
+                                <option value="2029"> 2029</option>
+                                <option value="2030"> 2030</option>
+                            </select>
+                            <!-- muda conforme o numero de parcelas no lancar_ferias -->
+                            <label>Parcelas</label>
+                            <select id="parcelas" name="parcelas">
+                            </select>
+                        </div>
+                        <div class="nomeGuerra">
+                            <label>NUP (Obrigatório para impressão/PDF)</label>
+                            <input type="text">
+                        </div>
+                        <div class="nip">
+                            <!-- data de emissao do doc -->
+                            <label>Emissão do DOC</label>
+                            <input type="date" min="2025-01-01" max="2030-12-31">
+                        </div>
+                    </div>
+                    <div class="refJanela2">
+                        <!-- dados básicos -->
+                        <h4>Local de Permanência</h4>
+                        <div>
+                            <input type="text" placeholder="Logradouro" id="logradouro">
+                            <input type="text" placeholder="Nº" id="numeroLogradouro">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Cidade" id="cidade">
+                            <input type="text" placeholder="Estado" id="estado">
+                            <input type="text" placeholder="Telefone" id="telefone">
+                        </div>
+                        <div>
+                            <!-- texto anexo pag 2 -->
+                            <label id="operacoesAdmin"> Texto do Anexo (Pág 2)</label>
+                            <textarea id="operacoesAdmin" name="message" rows="5" cols="40"
+                                placeholder="Digite aqui as opreações administrativas..." maxlength="500">
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2JanelaRef">
+                    <div class="refJanela3">
+                        <!-- detalhes que terao na papeleta -->
+                        <h4>Detalhes da Papeleta</h4>
+                        <input type="text" placeholder="" id="om">
+                        <div>
+                            <input type="text" placeholder="" id="pl">
+                            <select id="desmun" name="desmun">
+                                <option value="desmun1"> Desmuniciado: Sim</option>
+                                <option value="desmun2"> Desmuniciado: Não</option>
+                            </select>
+                        </div>
+                        <div class="horaPapeleta">
+                            <div>
+                                <label>Hora Licenc.</label>
+                                <input type="time" id="horaLc">
+                            </div>
+                            <div>
+                                <label>Hora Apres.</label>
+                                <input type="time" id="horaAp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botoesSavImp">
+                    <!-- botao salvar -->
+                    <button type="button" id="salvardados"> <i class="material-icons" id="iconSave">save</i>
+                        Salvar
+                        Dados</button>
+                    <!-- botao imprimir -->
+                    <button type="button" id="imprimirdados"> <i class="material-icons" id="iconPrint">print</i>
+                        Imprimir
+                        Documento</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
