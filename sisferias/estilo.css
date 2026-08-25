@@ -471,6 +471,20 @@ h1 {
     height: 50%;
 }
 
+/* página impressao */
+.conteudo3 input,
+.conteudo3 select,
+.conteudo3 data {
+    border-radius: 5px;
+}
+
+/* página lancar_ferias */
+.conteudo2 input,
+.conteudo2 select,
+.conteudo2 data {
+    border-radius: 5px;
+}
+
 /* box da das janelas da página impressao*/
 .refJanela1,
 .refJanela2,
@@ -481,9 +495,28 @@ h1 {
     padding: 25px;
 }
 
+/* box da das janelas da página impressao*/
+.refJanela4 {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 18px 22px;
+    padding: 25px;
+    overflow: scroll;
+}
+
 /* detalhe da papeleta om pag impressao */
 #om {
     width: 60%;
+}
+
+/* referente a pagina impressao */
+.refJanela4 input {
+    width: 40%;
+}
+
+/* referente a pagina impressao */
+.refJanela4 select {
+    width: 20%;
 }
 
 /* hora da licenciatura e hora apresentação pag impressao */
@@ -530,6 +563,8 @@ h1 {
     padding-top: 100px;
 }
 
+
+
 /* box do login na area restrita pag seguraca */
 .areaRestrita {
     padding-top: 50px;
@@ -553,4 +588,8 @@ h1 {
     margin-top: 15px;
     width: 82.5%;
     border-radius: 20px;
+}
+
+textarea {
+    resize: none;
 }
